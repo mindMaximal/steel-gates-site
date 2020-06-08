@@ -155,43 +155,108 @@
 	}
 }
 
+@media (min-width: 992px) and (max-width: 1360px) {
+	.home {
+
+		&--automatic {
+			background-image: url('../img/home/bg--automatic-laptop.jpg');
+			background-position: right bottom;
+		}
+
+		&--instruction {
+			background-image: url('../img/home/bg--instruction-laptop.jpg');
+			background-position: right bottom;
+		}
+
+		&--devices {
+			background-image: url('../img/home/bg--devices-laptop.jpg');
+			background-position: right bottom;
+		}
+
+		&--garage {
+			background-image: url('../img/home/bg--garage-laptop.jpg');
+			background-position: right bottom;
+		}
+
+		&--rollback {
+			background-image: url('../img/home/bg--rollback-laptop.jpg');
+			background-position: right bottom;
+		}
+
+		&__text {
+
+			&--automatic {
+				max-width: 600px;
+			}
+
+			&--garage {
+				max-width: 600px;
+			}
+
+			&--sectional {
+				max-width: 500px;
+			}
+
+			&--rollback {
+				max-width: 400px;
+			}
+		}
+
+		// &--rollback {
+		// 	background-image: url('../img/home/bg--rollback-tablet.jpg');
+			
+		// }
+
+		// &--construction {
+		// 	background-image: url('../img/home/bg--construction-tablet.jpg');
+			
+		// }
+
+		// &--instruction {
+		// 	background-image: url('../img/home/bg--instruction-tablet.jpg');
+			
+		// }
+
+		// &--devices {
+		// 	background-image: url('../img/home/bg--devices-tablet.jpg');
+			
+		// }
+	}
+}
+
 @include media-breakpoint-down(md) {
 	.home {
 
 		&--garage {
 			background-image: url('../img/home/bg--garage-tablet.jpg');
-			background-position: unset;
-			background-size: auto;
+
+			// background-position: unset;
+			// background-size: auto;
 		}
 
 		&--automatic {
 			background-image: url('../img/home/bg--automatic-tablet.jpg');
-			background-position: unset;
-			background-size: auto;
+
 		}
 
 		&--rollback {
 			background-image: url('../img/home/bg--rollback-tablet.jpg');
-			background-position: unset;
-			background-size: auto;
+
 		}
 
 		&--construction {
 			background-image: url('../img/home/bg--construction-tablet.jpg');
-			background-position: unset;
-			background-size: auto;
+
 		}
 
 		&--instruction {
 			background-image: url('../img/home/bg--instruction-tablet.jpg');
-			background-position: unset;
-			background-size: auto;
+
 		}
 
 		&--devices {
 			background-image: url('../img/home/bg--devices-tablet.jpg');
-			background-position: unset;
-			background-size: auto;
+
 		}
 
 		&__title {
@@ -301,6 +366,10 @@
 
 		&--construction {
 			background-image: url('../img/home/bg--construction-mobile.jpg');
+		}
+
+		&--devices {
+			background-image: url('../img/home/bg--devices-mobile.jpg');
 		}
 
 		&--instruction {
@@ -1000,6 +1069,10 @@
 
 .works {
 
+	&__img {
+		text-align: center;
+	}
+
 	&__subtitle {
 		font-weight: bold;
 		font-size: 42px;
@@ -1149,6 +1222,7 @@
 		height: 15px;
 		border-radius: 50%;
 		outline: none;
+		padding: 0;
 		margin: 0 10px;
 		background-color: transparent;
 		border: 1px solid $btn;
